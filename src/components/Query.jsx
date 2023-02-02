@@ -42,13 +42,13 @@ const Query = () => {
   return (
     <div className="modal rounded-md bg-[#1D2025] text-[#FFFFFF] m-20">
       <header className="bg-[#5C61F0] p-5 flex content-center justify-between rounded-t-md">
-        <div className="left">
+        <div className="left w-screen">
           <p className="text-[18px]">Create tag and query</p>
-          <p className="text-[#A5B4FC] text-[14px]">
+          <div className="bg-[#4338CA] text-[#FFFFFF] text-[14px] p-2 mt-2 rounded">
             {query === ""
               ? "The query you build will be saved here"
               : "Query: " + query}
-          </p>
+          </div>
         </div>
         <div className="right cursor-pointer">
           <img src={Close} alt="Close" />
